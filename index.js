@@ -60,6 +60,47 @@ const songs = [
         displayName: 'Jus Know',
         cover: 'assets/jusknow.png',
         artist: 'BlackMayo',
+    },
+    {
+        path: 'assets/9.mp3',
+        displayName: 'Lock It Up',
+        cover: 'assets/lockitup.png',
+        artist: 'Whethan',
+    },
+    {
+        path: 'assets/10.mp3',
+        displayName: 'Playah',
+        cover: 'assets/playah.png',
+        artist: 'Heygwuapo',
+    },
+    {
+        path: 'assets/11.mp3',
+        displayName: 'Knock Knock',
+        cover: 'assets/knockknock.png',
+        artist: 'SoFaygo',
+    },    {
+        path: 'assets/12.mp3',
+        displayName: 'Down With Me',
+        cover: 'assets/downwithme.png',
+        artist: 'Lil Tecca',
+    },
+    {
+        path: 'assets/13.mp3',
+        displayName: 'Greed',
+        cover: 'assets/greed.png',
+        artist: 'LUCKI ft Lil Yatchy',
+    },
+    {
+        path: 'assets/14.mp3',
+        displayName: 'Still The Same',
+        cover: 'assets/stillthesame.png',
+        artist: 'Autumn!',
+    },
+    {
+        path: 'assets/15.mp3',
+        displayName: 'Rock With You Pt. 2',
+        cover: 'assets/rockwithyou.png',
+        artist: 'Lil God Dan',
     }
 ];
 
