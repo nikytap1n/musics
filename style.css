@@ -1,113 +1,143 @@
-body {
-    font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
     min-height: 100vh;
-}
-
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin-top: 20px;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-h1 {
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #444;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 1.4em;
-    color: #555;
-}
-
-audio {
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.toggle-container,
-.button-container {
-    margin-bottom: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.toggle-switch,
-.button-container .toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 70px; /* Updated width */
-    height: 38px; /* Updated height */
-    margin: 0 10px;
+.background{
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
 }
 
-.toggle-switch input,
-.button-container .toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider,
-.button-container .slider {
+.background img{
     position: absolute;
-    cursor: pointer;
+    margin: auto;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
-    background-color: #ddd;
-    transition: .4s;
-    border-radius: 50px; /* Updated radius for a more rounded look */
+    right: 0;
+    min-width: 50%;
+    min-height: 50%;
+    filter: blur(15px);
+    -webkit-filter: blur(50px);
+    transform: scale(1.1);
 }
 
-.slider:before,
-.button-container .slider:before {
-    position: absolute;
-    content: "";
-    height: 30px; /* Updated size */
-    width: 30px; /* Updated size */
-    border-radius: 50%;
-    left: 4px;
-    bottom: 4px;
-    background-color: #ffffff;
-    transition: .4s;
+.container{
+    background-color: #e7e7e7;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
 }
 
-input:checked + .slider,
-.button-container input:checked + .slider {
-    background-color: #4CAF50;
+.container:hover{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
 
-input:checked + .slider:before,
-.button-container input:checked + .slider:before {
-    transform: translateX(32px); /* Adjusted to match updated slider width */
+.player-img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -50px;
+    left: 50px;
 }
 
-p {
-    font-size: 1em;
+.player-img img{
+    object-fit: cover;
+    border-radius: 20px;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+.player-img:hover img{
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+}
+
+.player-img img.active{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+h3{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+.player-progress{
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 20px 35px;
+    height: 6px;
+    width: 90%;
+}
+
+.progress{
+    background-color: #212121;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.music-duration{
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls{
+    position: relative;
+    top: -15px;
+    left: 120px;
+    width: 200px;
+}
+
+.fa-solid{
+    font-size: 30px;
     color: #666;
-    margin: 0;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover{
+    filter: brightness(40%);
+}
+
+.play-button{
+    font-size: 44px;
+    position: relative;
+    top: 3px;
 }
