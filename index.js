@@ -14,10 +14,10 @@ const music = new Audio();
 
 const songs = [
     {
-        path: 'assets/1.mp3',
-        displayName: '6locbaby',
-        cover: 'assets/6locbaby.png',
-        artist: 'Lil Loaded',
+        path: 'assets/10.mp3',
+        displayName: 'Playah',
+        cover: 'assets/playah.png',
+        artist: 'Heygwuapo',
     },
     {
         path: 'assets/2.mp3',
@@ -68,10 +68,10 @@ const songs = [
         artist: 'Whethan',
     },
     {
-        path: 'assets/10.mp3',
-        displayName: 'Playah',
-        cover: 'assets/playah.png',
-        artist: 'Heygwuapo',
+        path: 'assets/1.mp3',
+        displayName: '6locbaby',
+        cover: 'assets/6locbaby.png',
+        artist: 'Lil Loaded',
     },
     {
         path: 'assets/11.mp3',
@@ -101,6 +101,30 @@ const songs = [
         displayName: 'Rock With You Pt. 2',
         cover: 'assets/rockwithyou.png',
         artist: 'Lil God Dan',
+    },
+    {
+        path: 'assets/16.mp3',
+        displayName: 'one day',
+        cover: 'assets/oneday.png',
+        artist: 'Nevi',
+    },
+    {
+        path: 'assets/17.mp3',
+        displayName: 'Track 7',
+        cover: 'assets/bashfortheworld.png',
+        artist: 'Bashfortheworld',
+    },
+    {
+        path: 'assets/18.mp3',
+        displayName: 'ESSKEETIT',
+        cover: 'assets/essk.png',
+        artist: 'Lil Pump',
+    },
+    {
+        path: 'assets/19.mp3',
+        displayName: 'act i: stickerz 99',
+        cover: 'assets/sticker99.png',
+        artist: '4Batz',
     }
 ];
 
