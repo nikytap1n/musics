@@ -46,7 +46,7 @@ const songs = [
     {
         path: 'assets/6.mp3',
         displayName: '223s',
-        cover: 'assets/223.png',
+        cover: 'assets/233.png',
         artist: 'YNW Melly',
     },
     {
