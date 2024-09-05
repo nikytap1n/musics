@@ -27,15 +27,15 @@ const songs = [
     },
     {
         path: 'assets/3.mp3',
-        displayName: 'Violent Crimes',
-        cover: 'assets/violentcrimes.png',
-        artist: 'Kanye West (Jersey)',
+        displayName: 'Need It',
+        cover: 'assets/needit.png',
+        artist: 'Migos',
     },
     {
         path: 'assets/4.mp3',
-        displayName: 'Yoshimitsu',
-        cover: 'assets/yoshimitsu.png',
-        artist: 'Cochise',
+        displayName: '- act iii_ on god_ ',
+        cover: 'assets/ongod.png',
+        artist: '4Batz',
     },
     {
         path: 'assets/5.mp3',
@@ -45,9 +45,9 @@ const songs = [
     },
     {
         path: 'assets/6.mp3',
-        displayName: 'Lonely',
-        cover: 'assets/lonely.png',
-        artist: 'Akon',
+        displayName: 'Somewhere Only We Know',
+        cover: 'assets/somewhere.png',
+        artist: 'Keane',
     },
     {
         path: 'assets/7.mp3',
@@ -57,9 +57,9 @@ const songs = [
     },
     {
         path: 'assets/8.mp3',
-        displayName: 'Jus Know',
-        cover: 'assets/jusknow.png',
-        artist: 'BlackMayo',
+        displayName: 'Revenge',
+        cover: 'assets/revenge.png',
+        artist: 'XXXTENTACION',
     },
     {
         path: 'assets/9.mp3',
@@ -75,9 +75,9 @@ const songs = [
     },
     {
         path: 'assets/11.mp3',
-        displayName: 'Knock Knock',
-        cover: 'assets/knockknock.png',
-        artist: 'SoFaygo',
+        displayName: 'Blueberry Faygo',
+        cover: 'assets/blueberry.png',
+        artist: 'Lil Mosey',
     },    {
         path: 'assets/12.mp3',
         displayName: 'Down With Me',
@@ -125,6 +125,30 @@ const songs = [
         displayName: 'act i: stickerz 99',
         cover: 'assets/sticker99.png',
         artist: '4Batz',
+    },
+    {
+        path: 'assets/20.mp3',
+        displayName: 'Calling My Phone',
+        cover: 'assets/calling.png',
+        artist: 'Lil Tjay',
+    },
+    {
+        path: 'assets/21.mp3',
+        displayName: 'ash kaashh',
+        cover: 'assets/ash.png',
+        artist: 'lilbubblegum',
+    },
+    {
+        path: 'assets/22.mp3',
+        displayName: 'Can I Be Fr',
+        cover: 'assets/befr.png',
+        artist: 'Ladi',
+    },
+    {
+        path: 'assets/23.mp3',
+        displayName: 'LET GO',
+        cover: 'assets/letgo.png',
+        artist: 'AARON MAY',
     }
 ];
 
