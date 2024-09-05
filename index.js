@@ -39,15 +39,15 @@ const songs = [
     },
     {
         path: 'assets/5.mp3',
-        displayName: 'God Is',
-        cover: 'assets/godis.png',
-        artist: 'Kanye West',
+        displayName: 'Ransome',
+        cover: 'assets/ransom.png',
+        artist: 'Lil Tecca',
     },
     {
         path: 'assets/6.mp3',
-        displayName: 'Somewhere Only We Know',
-        cover: 'assets/somewhere.png',
-        artist: 'Keane',
+        displayName: '223s',
+        cover: 'assets/223.png',
+        artist: 'YNW Melly',
     },
     {
         path: 'assets/7.mp3',
