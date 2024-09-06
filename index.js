@@ -63,9 +63,9 @@ const songs = [
     },
     {
         path: 'assets/9.mp3',
-        displayName: 'Lock It Up',
-        cover: 'assets/lockitup.png',
-        artist: 'Whethan',
+        displayName: 'Prada',
+        cover: 'assets/prada.png',
+        artist: '24kgoldn',
     },
     {
         path: 'assets/1.mp3',
@@ -86,9 +86,9 @@ const songs = [
     },
     {
         path: 'assets/13.mp3',
-        displayName: 'Greed',
-        cover: 'assets/greed.png',
-        artist: 'LUCKI ft Lil Yatchy',
+        displayName: 'JETSKI',
+        cover: 'assets/jetski.png',
+        artist: 'Mosey & Lil Tecca',
     },
     {
         path: 'assets/14.mp3',
@@ -134,9 +134,9 @@ const songs = [
     },
     {
         path: 'assets/21.mp3',
-        displayName: 'ash kaashh',
-        cover: 'assets/ash.png',
-        artist: 'lilbubblegum',
+        displayName: 'THE RACE',
+        cover: 'assets/race.png',
+        artist: 'Tay-K',
     },
     {
         path: 'assets/22.mp3',
@@ -149,6 +149,36 @@ const songs = [
         displayName: 'LET GO',
         cover: 'assets/letgo.png',
         artist: 'AARON MAY',
+    },
+    {
+        path: 'assets/24.mp3',
+        displayName: 'Pop Up',
+        cover: 'assets/popup.png',
+        artist: 'Polo G ft Lil Tjay',
+    },
+    {
+        path: 'assets/25.mp3',
+        displayName: 'Bounce Out With That',
+        cover: 'assets/bounce.png',
+        artist: 'YBN Nahmir',
+    },
+    {
+        path: 'assets/25.mp3',
+        displayName: 'Bounce Out With That',
+        cover: 'assets/bounce.png',
+        artist: 'YBN Nahmir',
+    },
+    {
+        path: 'assets/26.mp3',
+        displayName: 'Did It Again',
+        cover: 'assets/diditagain.png',
+        artist: 'Lil Tecca',
+    },
+     {
+        path: 'assets/27.mp3',
+        displayName: 'Party Girl',
+        cover: 'assets/party.png',
+        artist: 'StaySolidRocky',
     }
 ];
 
