@@ -163,12 +163,6 @@ const songs = [
         artist: 'YBN Nahmir',
     },
     {
-        path: 'assets/25.mp3',
-        displayName: 'Bounce Out With That',
-        cover: 'assets/bounce.png',
-        artist: 'YBN Nahmir',
-    },
-    {
         path: 'assets/26.mp3',
         displayName: 'Did It Again',
         cover: 'assets/diditagain.png',
