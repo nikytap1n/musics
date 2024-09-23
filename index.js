@@ -110,9 +110,9 @@ const songs = [
     },
     {
         path: 'assets/17.mp3',
-        displayName: 'Track 7',
-        cover: 'assets/bashfortheworld.png',
-        artist: 'Bashfortheworld',
+        displayName: 'Sad But Happy',
+        cover: 'assets/sadbhappy.png',
+        artist: 'dkj',
     },
     {
         path: 'assets/18.mp3',
