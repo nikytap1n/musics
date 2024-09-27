@@ -15,15 +15,15 @@ const music = new Audio();
 const songs = [
     {
         path: 'assets/10.mp3',
-        displayName: 'Playah',
-        cover: 'assets/playah.png',
-        artist: 'Heygwuapo',
+        displayName: 'Wrong',
+        cover: 'assets/wrong.png',
+        artist: 'Luh Kel',
     },
     {
         path: 'assets/2.mp3',
-        displayName: 'Gang Unit',
-        cover: 'assets/gangunit.png',
-        artist: 'Lil Loaded',
+        displayName: 'The Box',
+        cover: 'assets/thebox.png',
+        artist: 'Roddy Ricch',
     },
     {
         path: 'assets/3.mp3',
@@ -51,9 +51,9 @@ const songs = [
     },
     {
         path: 'assets/7.mp3',
-        displayName: 'Hell N Back',
-        cover: 'assets/hellnback.png',
-        artist: 'Bakar',
+        displayName: 'Get You',
+        cover: 'assets/getyou.png',
+        artist: 'Daniel Caesar',
     },
     {
         path: 'assets/8.mp3',
@@ -92,15 +92,15 @@ const songs = [
     },
     {
         path: 'assets/14.mp3',
-        displayName: 'Still The Same',
-        cover: 'assets/stillthesame.png',
-        artist: 'Autumn!',
+        displayName: 'ROXANNE',
+        cover: 'assets/roxann.png',
+        artist: 'Arizona Zervas',
     },
     {
         path: 'assets/15.mp3',
-        displayName: 'Rock With You Pt. 2',
-        cover: 'assets/rockwithyou.png',
-        artist: 'Lil God Dan',
+        displayName: 'Mood Swings',
+        cover: 'assets/moodswing.png',
+        artist: 'Pop Smoke',
     },
     {
         path: 'assets/16.mp3',
@@ -116,9 +116,9 @@ const songs = [
     },
     {
         path: 'assets/18.mp3',
-        displayName: 'ESSKEETIT',
-        cover: 'assets/essk.png',
-        artist: 'Lil Pump',
+        displayName: 'Crazy Story',
+        cover: 'assets/crazy.png',
+        artist: 'King Von',
     },
     {
         path: 'assets/19.mp3',
@@ -168,7 +168,7 @@ const songs = [
         cover: 'assets/diditagain.png',
         artist: 'Lil Tecca',
     },
-     {
+    {
         path: 'assets/27.mp3',
         displayName: 'Party Girl',
         cover: 'assets/party.png',
