@@ -33,9 +33,9 @@ const songs = [
     },
     {
         path: 'assets/4.mp3',
-        displayName: '- act iii_ on god_ ',
-        cover: 'assets/ongod.png',
-        artist: '4Batz',
+        displayName: 'Ballin'',
+        cover: 'assets/ballin.png',
+        artist: 'Mustard',
     },
     {
         path: 'assets/5.mp3',
@@ -69,9 +69,9 @@ const songs = [
     },
     {
         path: 'assets/1.mp3',
-        displayName: '6locbaby',
-        cover: 'assets/6locbaby.png',
-        artist: 'Lil Loaded',
+        displayName: 'Dilemma',
+        cover: 'assets/dilemma.png',
+        artist: 'Nelly',
     },
     {
         path: 'assets/11.mp3',
@@ -122,9 +122,9 @@ const songs = [
     },
     {
         path: 'assets/19.mp3',
-        displayName: 'act i: stickerz 99',
-        cover: 'assets/sticker99.png',
-        artist: '4Batz',
+        displayName: 'Payphone',
+        cover: 'assets/payphone.png',
+        artist: 'Maroon 5',
     },
     {
         path: 'assets/20.mp3',
@@ -158,9 +158,9 @@ const songs = [
     },
     {
         path: 'assets/25.mp3',
-        displayName: 'Bounce Out With That',
-        cover: 'assets/bounce.png',
-        artist: 'YBN Nahmir',
+        displayName: 'Baby',
+        cover: 'assets/baby.png',
+        artist: 'Justin Bieber',
     },
     {
         path: 'assets/26.mp3',
@@ -173,6 +173,30 @@ const songs = [
         displayName: 'Party Girl',
         cover: 'assets/party.png',
         artist: 'StaySolidRocky',
+    },
+    {
+        path: 'assets/28.mp3',
+        displayName: '679',
+        cover: 'assets/679.png',
+        artist: 'Fetty Wap',
+    },
+    {
+        path: 'assets/29.mp3',
+        displayName: 'Sugar',
+        cover: 'assets/sugar.png',
+        artist: 'Maroon 5',
+    },
+    {
+        path: 'assets/30.mp3',
+        displayName: 'Watch Me',
+        cover: 'assets/watchme.png',
+        artist: 'Maroon 5',
+    },
+    {
+        path: 'assets/31.mp3',
+        displayName: 'Juju on that beat',
+        cover: 'assets/juju.png',
+        artist: 'Zay Hilfigerrr & Zayion McCall',
     }
 ];
 
