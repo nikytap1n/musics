@@ -231,9 +231,13 @@ function loadMusic(song) {
     artist.textContent = song.artist;
     image.src = song.cover;
     background.src = song.cover;
-    
-    // Set the page title to the current song's title
+
     document.title = song.displayName;
+
+    // Update duration when metadata is loaded
+    music.addEventListener('loadedmetadata', () => {
+        durationEl.textContent = formatTime(music.duration);
+    });
 }
 
 function changeMusic(direction) {
@@ -247,9 +251,7 @@ function updateProgressBar() {
     const progressPercent = (currentTime / duration) * 100;
     progress.style.width = `${progressPercent}%`;
 
-    const formatTime = (time) => String(Math.floor(time)).padStart(2, '0');
-    durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(duration % 60)}`;
-    currentTimeEl.textContent = `${formatTime(currentTime / 60)}:${formatTime(currentTime % 60)}`;
+    currentTimeEl.textContent = formatTime(currentTime);
 }
 
 function setProgressBar(e) {
@@ -258,11 +260,22 @@ function setProgressBar(e) {
     music.currentTime = (clickX / width) * music.duration;
 }
 
+const formatTime = (time) => {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+    return `${minutes}:${seconds}`;
+};
+
+// Event listeners
 playBtn.addEventListener('click', togglePlay);
 prevBtn.addEventListener('click', () => changeMusic(-1));
 nextBtn.addEventListener('click', () => changeMusic(1));
 music.addEventListener('ended', () => changeMusic(1));
 music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
+music.addEventListener('error', (e) => {
+    console.error("Error playing audio: ", e);
+});
 
+// Initial load
 loadMusic(songs[musicIndex]);
