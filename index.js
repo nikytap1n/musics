@@ -32,12 +32,6 @@ const songs = [
         artist: 'Migos',
     },
     {
-        path: 'assets/4.mp3',
-        displayName: 'Ballin'',
-        cover: 'assets/ballin.png',
-        artist: 'Mustard',
-    },
-    {
         path: 'assets/5.mp3',
         displayName: 'Ransome',
         cover: 'assets/ransom.png',
