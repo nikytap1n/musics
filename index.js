@@ -184,7 +184,7 @@ const songs = [
         path: 'assets/30.mp3',
         displayName: 'Watch Me',
         cover: 'assets/watchme.png',
-        artist: 'Maroon 5',
+        artist: 'Silent6',
     },
     {
         path: 'assets/31.mp3',
