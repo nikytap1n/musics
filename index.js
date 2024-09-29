@@ -185,18 +185,6 @@ const songs = [
         displayName: 'Sugar',
         cover: 'assets/sugar.png',
         artist: 'Maroon 5',
-    },
-    {
-        path: 'assets/30.mp3',
-        displayName: 'Watch Me',
-        cover: 'assets/watchme.png',
-        artist: 'Maroon 5',
-    },
-    {
-        path: 'assets/31.mp3',
-        displayName: 'Juju on that beat',
-        cover: 'assets/juju.png',
-        artist: 'Zay Hilfigerrr & Zayion McCall',
     }
 ];
 
