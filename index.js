@@ -173,18 +173,6 @@ const songs = [
         displayName: 'Party Girl',
         cover: 'assets/party.png',
         artist: 'StaySolidRocky',
-    },
-    {
-        path: 'assets/28.mp3',
-        displayName: '679',
-        cover: 'assets/679.png',
-        artist: 'Fetty Wap',
-    },
-    {
-        path: 'assets/29.mp3',
-        displayName: 'Sugar',
-        cover: 'assets/sugar.png',
-        artist: 'Maroon 5',
     }
 ];
 
