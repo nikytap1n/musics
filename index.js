@@ -191,6 +191,12 @@ const songs = [
         displayName: 'Juju on that beat',
         cover: 'assets/juju.png',
         artist: 'Zay Hilfigerrr & Zayion McCall',
+    },
+    {
+        path: 'assets/32.mp3',
+        displayName: 'New Drop',
+        cover: 'assets/newdrop.png',
+        artist: 'Don Toliver',
     }
 ];
 
