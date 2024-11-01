@@ -197,6 +197,12 @@ const songs = [
         displayName: 'New Drop',
         cover: 'assets/newdrop.png',
         artist: 'Don Toliver',
+    },
+    {
+        path: 'assets/33.mp3',
+        displayName: '505',
+        cover: 'assets/505.png',
+        artist: 'Arctic Monkeys',
     }
 ];
 
