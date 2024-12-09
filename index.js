@@ -15,9 +15,9 @@ const music = new Audio();
 const songs = [
     {
         path: 'assets/10.mp3',
-        displayName: 'Wrong',
-        cover: 'assets/wrong.png',
-        artist: 'Luh Kel',
+        displayName: 'Like a Tattoo',
+        cover: 'assets/likeatattoo.jpg',
+        artist: 'Sade',
     },
     {
         path: 'assets/2.mp3',
@@ -63,9 +63,9 @@ const songs = [
     },
     {
         path: 'assets/1.mp3',
-        displayName: 'Dilemma',
-        cover: 'assets/dilemma.png',
-        artist: 'Nelly',
+        displayName: 'What You Heard',
+        cover: 'assets/wyh.jpg',
+        artist: 'Sonder',
     },
     {
         path: 'assets/11.mp3',
