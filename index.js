@@ -92,9 +92,9 @@ const songs = [
     },
     {
         path: 'assets/15.mp3',
-        displayName: 'Mood Swings',
-        cover: 'assets/moodswing.png',
-        artist: 'Pop Smoke',
+        displayName: 'Elevate',
+        cover: 'assets/elevate.png',
+        artist: 'NEMZZZ',
     },
     {
         path: 'assets/16.mp3',
@@ -170,9 +170,9 @@ const songs = [
     },
     {
         path: 'assets/28.mp3',
-        displayName: '679',
-        cover: 'assets/679.png',
-        artist: 'Fetty Wap',
+        displayName: 'PTSD',
+        cover: 'assets/ptsd.png',
+        artist: 'NEMZZZ',
     },
     {
         path: 'assets/29.mp3',
