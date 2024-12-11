@@ -21,15 +21,15 @@ const songs = [
     },
     {
         path: 'assets/2.mp3',
-        displayName: 'The Box',
-        cover: 'assets/thebox.png',
-        artist: 'Roddy Ricch',
+        displayName: 'Barking',
+        cover: 'assets/barking.png',
+        artist: 'Ramz',
     },
     {
         path: 'assets/3.mp3',
-        displayName: 'Need It',
-        cover: 'assets/needit.png',
-        artist: 'Migos',
+        displayName: 'Rover',
+        cover: 'assets/rover.png',
+        artist: 'S1mba',
     },
     {
         path: 'assets/5.mp3',
@@ -45,9 +45,9 @@ const songs = [
     },
     {
         path: 'assets/7.mp3',
-        displayName: 'Get You',
-        cover: 'assets/getyou.png',
-        artist: 'Daniel Caesar',
+        displayName: 'Already',
+        cover: 'assets/already.png',
+        artist: 'Kodak Black',
     },
     {
         path: 'assets/8.mp3',
@@ -98,9 +98,9 @@ const songs = [
     },
     {
         path: 'assets/16.mp3',
-        displayName: 'one day',
-        cover: 'assets/oneday.png',
-        artist: 'Nevi',
+        displayName: 'Bad Time',
+        cover: 'assets/badtime.png',
+        artist: 'Lil Tecca',
     },
     {
         path: 'assets/17.mp3',
@@ -140,9 +140,9 @@ const songs = [
     },
     {
         path: 'assets/23.mp3',
-        displayName: 'LET GO',
-        cover: 'assets/letgo.png',
-        artist: 'AARON MAY',
+        displayName: 'Ladbroke Grove',
+        cover: 'assets/ladbroke.png',
+        artist: 'AJ Tracey',
     },
     {
         path: 'assets/24.mp3',
