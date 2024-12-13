@@ -57,9 +57,9 @@ const songs = [
     },
     {
         path: 'assets/9.mp3',
-        displayName: 'Prada',
-        cover: 'assets/prada.png',
-        artist: '24kgoldn',
+        displayName: 'Wishing on a Star',
+        cover: 'assets/wishing.png',
+        artist: 'Rose Royce',
     },
     {
         path: 'assets/1.mp3',
@@ -74,21 +74,21 @@ const songs = [
         artist: 'Lil Mosey',
     },    {
         path: 'assets/12.mp3',
-        displayName: 'Down With Me',
-        cover: 'assets/downwithme.png',
-        artist: 'Lil Tecca',
+        displayName: 'Doja',
+        cover: 'assets/doja.png',
+        artist: 'Central Cee',
     },
     {
         path: 'assets/13.mp3',
-        displayName: 'JETSKI',
-        cover: 'assets/jetski.png',
-        artist: 'Mosey & Lil Tecca',
+        displayName: 'Jack In The Box',
+        cover: 'assets/jack.png',
+        artist: 'WhyDee',
     },
     {
         path: 'assets/14.mp3',
-        displayName: 'ROXANNE',
-        cover: 'assets/roxann.png',
-        artist: 'Arizona Zervas',
+        displayName: 'Sunday Best',
+        cover: 'assets/sunday.png',
+        artist: 'Surfaces',
     },
     {
         path: 'assets/15.mp3',
@@ -134,9 +134,9 @@ const songs = [
     },
     {
         path: 'assets/22.mp3',
-        displayName: 'Can I Be Fr',
-        cover: 'assets/befr.png',
-        artist: 'Ladi',
+        displayName: 'Want U',
+        cover: 'assets/wantu.png',
+        artist: 'Clara La San',
     },
     {
         path: 'assets/23.mp3',
@@ -146,9 +146,9 @@ const songs = [
     },
     {
         path: 'assets/24.mp3',
-        displayName: 'Pop Up',
-        cover: 'assets/popup.png',
-        artist: 'Polo G ft Lil Tjay',
+        displayName: 'B.E.D',
+        cover: 'assets/bed.png',
+        artist: 'Jacquees',
     },
     {
         path: 'assets/25.mp3',
@@ -158,9 +158,9 @@ const songs = [
     },
     {
         path: 'assets/26.mp3',
-        displayName: 'Did It Again',
-        cover: 'assets/diditagain.png',
-        artist: 'Lil Tecca',
+        displayName: 'Birthday S*x',
+        cover: 'assets/birthday.png',
+        artist: 'Jjeremih',
     },
     {
         path: 'assets/27.mp3',
