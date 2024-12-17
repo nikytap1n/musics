@@ -208,6 +208,7 @@ const songs = [
 
 let musicIndex = 0;
 let isPlaying = false;
+let history = []; // To keep track of the song history
 
 function togglePlay() {
     if (isPlaying) {
@@ -247,19 +248,21 @@ function loadMusic(song) {
 }
 
 function changeMusic(direction) {
-    if (direction === 1) { 
+    if (direction === 1) { // Next song (random)
+        history.push(musicIndex); // Add current song to history
         let randomIndex;
         do {
             randomIndex = Math.floor(Math.random() * songs.length);
-        } while (randomIndex === musicIndex); 
+        } while (randomIndex === musicIndex); // Avoid playing the same song
         musicIndex = randomIndex;
-    } else { 
-        musicIndex = (musicIndex - 1 + songs.length) % songs.length;
+    } else if (direction === -1 && history.length > 0) { // Previous song
+        musicIndex = history.pop(); // Go back to the previous song
+    } else {
+        return; // Do nothing if history is empty
     }
     loadMusic(songs[musicIndex]);
     playMusic();
 }
-
 
 function updateProgressBar() {
     const { duration, currentTime } = music;
@@ -283,9 +286,9 @@ const formatTime = (time) => {
 
 // Event listeners
 playBtn.addEventListener('click', togglePlay);
-prevBtn.addEventListener('click', () => changeMusic(-1));
-nextBtn.addEventListener('click', () => changeMusic(1));
-music.addEventListener('ended', () => changeMusic(1));
+prevBtn.addEventListener('click', () => changeMusic(-1)); // Back button
+nextBtn.addEventListener('click', () => changeMusic(1)); // Random next button
+music.addEventListener('ended', () => changeMusic(1)); // Autoplay random next song
 music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
 music.addEventListener('error', (e) => {
