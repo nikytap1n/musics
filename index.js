@@ -247,13 +247,13 @@ function loadMusic(song) {
 }
 
 function changeMusic(direction) {
-    if (direction === 1) { 
+    if (direction === 1) { // Random next song
         let randomIndex;
         do {
             randomIndex = Math.floor(Math.random() * songs.length);
-        } while (randomIndex === musicIndex); 
+        } while (randomIndex === musicIndex); // Avoid playing the same song
         musicIndex = randomIndex;
-    } else { 
+    } else { // Previous song (keep the original behavior for going backwards)
         musicIndex = (musicIndex - 1 + songs.length) % songs.length;
     }
     loadMusic(songs[musicIndex]);
