@@ -208,7 +208,6 @@ const songs = [
 
 let musicIndex = 0;
 let isPlaying = false;
-let history = []; // To keep track of the song history
 
 function togglePlay() {
     if (isPlaying) {
@@ -248,17 +247,14 @@ function loadMusic(song) {
 }
 
 function changeMusic(direction) {
-    if (direction === 1) { // Next song (random)
-        history.push(musicIndex); // Add current song to history
+    if (direction === 1) { 
         let randomIndex;
         do {
             randomIndex = Math.floor(Math.random() * songs.length);
-        } while (randomIndex === musicIndex); // Avoid playing the same song
+        } while (randomIndex === musicIndex); 
         musicIndex = randomIndex;
-    } else if (direction === -1 && history.length > 0) { // Previous song
-        musicIndex = history.pop(); // Go back to the previous song
-    } else {
-        return; // Do nothing if history is empty
+    } else { 
+        musicIndex = (musicIndex - 1 + songs.length) % songs.length;
     }
     loadMusic(songs[musicIndex]);
     playMusic();
@@ -267,7 +263,7 @@ function changeMusic(direction) {
 function updateProgressBar() {
     const { duration, currentTime } = music;
     const progressPercent = (currentTime / duration) * 100;
-    progress.style.width = `${progressPercent}%`;
+    progress.style.width = ${progressPercent}%;
 
     currentTimeEl.textContent = formatTime(currentTime);
 }
@@ -281,14 +277,14 @@ function setProgressBar(e) {
 const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60).toString().padStart(2, '0');
-    return `${minutes}:${seconds}`;
+    return ${minutes}:${seconds};
 };
 
 // Event listeners
 playBtn.addEventListener('click', togglePlay);
-prevBtn.addEventListener('click', () => changeMusic(-1)); // Back button
-nextBtn.addEventListener('click', () => changeMusic(1)); // Random next button
-music.addEventListener('ended', () => changeMusic(1)); // Autoplay random next song
+prevBtn.addEventListener('click', () => changeMusic(-1));
+nextBtn.addEventListener('click', () => changeMusic(1));
+music.addEventListener('ended', () => changeMusic(1));
 music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
 music.addEventListener('error', (e) => {
