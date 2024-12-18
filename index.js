@@ -219,14 +219,18 @@ function togglePlay() {
 
 function playMusic() {
     isPlaying = true;
+    // Change play button icon
     playBtn.classList.replace('fa-play', 'fa-pause');
+    // Set button hover title
     playBtn.setAttribute('title', 'Pause');
     music.play();
 }
 
 function pauseMusic() {
     isPlaying = false;
+    // Change pause button icon
     playBtn.classList.replace('fa-pause', 'fa-play');
+    // Set button hover title
     playBtn.setAttribute('title', 'Play');
     music.pause();
 }
@@ -237,26 +241,10 @@ function loadMusic(song) {
     artist.textContent = song.artist;
     image.src = song.cover;
     background.src = song.cover;
-
-    document.title = song.displayName;
-
-    // Update duration when metadata is loaded
-    music.addEventListener('loadedmetadata', () => {
-        durationEl.textContent = formatTime(music.duration);
-    });
 }
 
 function changeMusic(direction) {
     musicIndex = (musicIndex + direction + songs.length) % songs.length;
-    if (direction === 1) { 
-        let randomIndex;
-        do {
-            randomIndex = Math.floor(Math.random() * songs.length);
-        } while (randomIndex === musicIndex); 
-        musicIndex = randomIndex;
-    } else { 
-        musicIndex = (musicIndex - 1 + songs.length) % songs.length;
-    }
     loadMusic(songs[musicIndex]);
     playMusic();
 }
@@ -264,9 +252,11 @@ function changeMusic(direction) {
 function updateProgressBar() {
     const { duration, currentTime } = music;
     const progressPercent = (currentTime / duration) * 100;
-    progress.style.width = ${progressPercent}%;
+    progress.style.width = `${progressPercent}%`;
 
-    currentTimeEl.textContent = formatTime(currentTime);
+    const formatTime = (time) => String(Math.floor(time)).padStart(2, '0');
+    durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(duration % 60)}`;
+    currentTimeEl.textContent = `${formatTime(currentTime / 60)}:${formatTime(currentTime % 60)}`;
 }
 
 function setProgressBar(e) {
@@ -275,22 +265,11 @@ function setProgressBar(e) {
     music.currentTime = (clickX / width) * music.duration;
 }
 
-const formatTime = (time) => {
-    const minutes = Math.floor(time / 60);
-    const seconds = Math.floor(time % 60).toString().padStart(2, '0');
-    return ${minutes}:${seconds};
-};
-
-// Event listeners
 playBtn.addEventListener('click', togglePlay);
 prevBtn.addEventListener('click', () => changeMusic(-1));
 nextBtn.addEventListener('click', () => changeMusic(1));
 music.addEventListener('ended', () => changeMusic(1));
 music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
-music.addEventListener('error', (e) => {
-    console.error("Error playing audio: ", e);
-});
 
-// Initial load
 loadMusic(songs[musicIndex]);
