@@ -248,6 +248,15 @@ function loadMusic(song) {
 
 function changeMusic(direction) {
     musicIndex = (musicIndex + direction + songs.length) % songs.length;
+    if (direction === 1) { 
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * songs.length);
+        } while (randomIndex === musicIndex); 
+        musicIndex = randomIndex;
+    } else { 
+        musicIndex = (musicIndex - 1 + songs.length) % songs.length;
+    }
     loadMusic(songs[musicIndex]);
     playMusic();
 }
