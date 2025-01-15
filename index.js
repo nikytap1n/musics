@@ -188,9 +188,9 @@ const songs = [
     },
     {
         path: 'assets/31.mp3',
-        displayName: 'Juju on that beat',
-        cover: 'assets/juju.png',
-        artist: 'Zay Hilfigerrr & Zayion McCall',
+        displayName: 'Leave Me Alone',
+        cover: 'assets/leave.png',
+        artist: 'Flipp Dinero',
     },
     {
         path: 'assets/32.mp3',
