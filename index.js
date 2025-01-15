@@ -164,9 +164,9 @@ const songs = [
     },
     {
         path: 'assets/27.mp3',
-        displayName: 'Party Girl',
-        cover: 'assets/party.png',
-        artist: 'StaySolidRocky',
+        displayName: 'Barking',
+        cover: 'assets/barking.png',
+        artist: 'Ramz',
     },
     {
         path: 'assets/28.mp3',
