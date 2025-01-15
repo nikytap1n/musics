@@ -15,15 +15,15 @@ const music = new Audio();
 const songs = [
     {
         path: 'assets/10.mp3',
-        displayName: 'Like a Tattoo',
-        cover: 'assets/likeatattoo.jpg',
-        artist: 'Sade',
+        displayName: 'Feeling',
+        cover: 'assets/feeling.jpg',
+        artist: 'Juice Wrld',
     },
     {
         path: 'assets/2.mp3',
-        displayName: 'Barking',
-        cover: 'assets/barking.png',
-        artist: 'Ramz',
+        displayName: 'Make No Sense',
+        cover: 'assets/nosense.png',
+        artist: 'YoungBoy Never Broke Again',
     },
     {
         path: 'assets/3.mp3',
@@ -63,15 +63,15 @@ const songs = [
     },
     {
         path: 'assets/1.mp3',
-        displayName: 'What You Heard',
-        cover: 'assets/wyh.jpg',
-        artist: 'Sonder',
+        displayName: 'Love Me',
+        cover: 'assets/loveme.jpg',
+        artist: 'Lil Tecca',
     },
     {
         path: 'assets/11.mp3',
-        displayName: 'Blueberry Faygo',
-        cover: 'assets/blueberry.png',
-        artist: 'Lil Mosey',
+        displayName: 'Tuff',
+        cover: 'assets/tuff.png',
+        artist: 'Jaah SLT',
     },    {
         path: 'assets/12.mp3',
         displayName: 'Doja',
@@ -80,9 +80,9 @@ const songs = [
     },
     {
         path: 'assets/13.mp3',
-        displayName: 'Jack In The Box',
-        cover: 'assets/jack.png',
-        artist: 'WhyDee',
+        displayName: 'Shotta Flow',
+        cover: 'assets/shotta.png',
+        artist: 'NLE Choppa',
     },
     {
         path: 'assets/14.mp3',
@@ -128,9 +128,9 @@ const songs = [
     },
     {
         path: 'assets/21.mp3',
-        displayName: 'THE RACE',
-        cover: 'assets/race.png',
-        artist: 'Tay-K',
+        displayName: 'Kills',
+        cover: 'assets/kills.png',
+        artist: 'Chief Keef',
     },
     {
         path: 'assets/22.mp3',
@@ -158,9 +158,9 @@ const songs = [
     },
     {
         path: 'assets/26.mp3',
-        displayName: 'Birthday S*x',
-        cover: 'assets/birthday.png',
-        artist: 'Jjeremih',
+        displayName: 'Murder On My Mind',
+        cover: 'assets/mind.png',
+        artist: 'YNW Melly',
     },
     {
         path: 'assets/27.mp3',
