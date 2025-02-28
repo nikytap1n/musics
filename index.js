@@ -39,15 +39,15 @@ const songs = [
     },
     {
         path: 'assets/6.mp3',
-        displayName: '223s',
-        cover: 'assets/233.png',
-        artist: 'YNW Melly',
+        displayName: 'Pick Up The Phone',
+        cover: 'assets/pickup.jpg',
+        artist: 'Young Thug & Travis Scott',
     },
     {
         path: 'assets/7.mp3',
-        displayName: 'Already',
-        cover: 'assets/already.png',
-        artist: 'Kodak Black',
+        displayName: 'Chanel',
+        cover: 'assets/gogetit.jpg',
+        artist: 'Young Thug Lil Baby Gunna',
     },
     {
         path: 'assets/8.mp3',
@@ -57,9 +57,9 @@ const songs = [
     },
     {
         path: 'assets/9.mp3',
-        displayName: 'Wishing on a Star',
-        cover: 'assets/wishing.png',
-        artist: 'Rose Royce',
+        displayName: 'You Lied',
+        cover: 'assets/youlied.jpg',
+        artist: 'Rayy Dubb',
     },
     {
         path: 'assets/1.mp3',
@@ -86,9 +86,9 @@ const songs = [
     },
     {
         path: 'assets/14.mp3',
-        displayName: 'Sunday Best',
-        cover: 'assets/sunday.png',
-        artist: 'Surfaces',
+        displayName: 'Skrilla',
+        cover: 'assets/skrilla.jpg',
+        artist: 'Kodak Black',
     },
     {
         path: 'assets/15.mp3',
@@ -104,9 +104,9 @@ const songs = [
     },
     {
         path: 'assets/17.mp3',
-        displayName: 'Sad But Happy',
-        cover: 'assets/sadbhappy.png',
-        artist: 'dkj',
+        displayName: 'Genie',
+        cover: 'assets/genie.jpg',
+        artist: 'YoungBoy never broke again',
     },
     {
         path: 'assets/18.mp3',
@@ -116,9 +116,9 @@ const songs = [
     },
     {
         path: 'assets/19.mp3',
-        displayName: 'Payphone',
-        cover: 'assets/payphone.png',
-        artist: 'Maroon 5',
+        displayName: 'Realest',
+        cover: 'assets/realest.jpg',
+        artist: 'Stizzy',
     },
     {
         path: 'assets/20.mp3',
@@ -152,9 +152,9 @@ const songs = [
     },
     {
         path: 'assets/25.mp3',
-        displayName: 'Baby',
-        cover: 'assets/baby.png',
-        artist: 'Justin Bieber',
+        displayName: 'Ballin',
+        cover: 'assets/ballin.jpg',
+        artist: 'Mustard',
     },
     {
         path: 'assets/26.mp3',
@@ -176,15 +176,15 @@ const songs = [
     },
     {
         path: 'assets/29.mp3',
-        displayName: 'Sugar',
-        cover: 'assets/sugar.png',
-        artist: 'Maroon 5',
+        displayName: 'Quality Control',
+        cover: 'assets/qualitycontrol.jpg',
+        artist: 'Lil Baby DaBaby',
     },
     {
         path: 'assets/30.mp3',
-        displayName: 'Watch Me',
-        cover: 'assets/watchme.png',
-        artist: 'Silent6',
+        displayName: 'Old Town Road',
+        cover: 'assets/oldtownroad.jpg',
+        artist: 'Lil Nas X',
     },
     {
         path: 'assets/31.mp3',
