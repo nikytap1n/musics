@@ -11,7 +11,6 @@ const image = document.getElementById('cover'),
     background = document.getElementById('bg-img');
 
 const music = new Audio();
-
 const songs = [
     {
         path: 'assets/10.mp3',
@@ -206,7 +205,10 @@ const songs = [
     }
 ];
 
-let musicIndex = 0;
+let musicIndex = Math.floor(Math.random() * songs.length);
+let playHistory = [];
+let historyPosition = -1;
+let playedSongs = new Set();
 let isPlaying = false;
 
 function togglePlay() {
@@ -219,18 +221,14 @@ function togglePlay() {
 
 function playMusic() {
     isPlaying = true;
-    // Change play button icon
     playBtn.classList.replace('fa-play', 'fa-pause');
-    // Set button hover title
     playBtn.setAttribute('title', 'Pause');
     music.play();
 }
 
 function pauseMusic() {
     isPlaying = false;
-    // Change pause button icon
     playBtn.classList.replace('fa-pause', 'fa-play');
-    // Set button hover title
     playBtn.setAttribute('title', 'Play');
     music.pause();
 }
@@ -243,17 +241,52 @@ function loadMusic(song) {
     background.src = song.cover;
 }
 
-function changeMusic(direction) {
-    musicIndex = (musicIndex + direction + songs.length) % songs.length;
+function getRandomSong() {
+    if (playedSongs.size >= songs.length - 1) {
+        playedSongs.clear();
+        playedSongs.add(musicIndex);
+    }
+    
+    let newIndex;
+    do {
+        newIndex = Math.floor(Math.random() * songs.length);
+    } while (playedSongs.has(newIndex));
+    
+    playedSongs.add(newIndex);
+    return newIndex;
+}
+
+function nextMusic() {
+    if (historyPosition < playHistory.length - 1) {
+        playHistory = playHistory.slice(0, historyPosition + 1);
+    }
+    
+    const newIndex = getRandomSong();
+    
+    playHistory.push(newIndex);
+    historyPosition = playHistory.length - 1;
+    
+    musicIndex = newIndex;
     loadMusic(songs[musicIndex]);
     playMusic();
+}
+
+function prevMusic() {
+    if (historyPosition > 0) {
+        historyPosition--;
+        musicIndex = playHistory[historyPosition];
+        loadMusic(songs[musicIndex]);
+        playMusic();
+    } else {
+        music.currentTime = 0;
+        playMusic();
+    }
 }
 
 function updateProgressBar() {
     const { duration, currentTime } = music;
     const progressPercent = (currentTime / duration) * 100;
     progress.style.width = `${progressPercent}%`;
-
     const formatTime = (time) => String(Math.floor(time)).padStart(2, '0');
     durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(duration % 60)}`;
     currentTimeEl.textContent = `${formatTime(currentTime / 60)}:${formatTime(currentTime % 60)}`;
@@ -265,10 +298,14 @@ function setProgressBar(e) {
     music.currentTime = (clickX / width) * music.duration;
 }
 
+playedSongs.add(musicIndex);
+playHistory.push(musicIndex);
+historyPosition = 0;
+
 playBtn.addEventListener('click', togglePlay);
-prevBtn.addEventListener('click', () => changeMusic(-1));
-nextBtn.addEventListener('click', () => changeMusic(1));
-music.addEventListener('ended', () => changeMusic(1));
+prevBtn.addEventListener('click', prevMusic);
+nextBtn.addEventListener('click', nextMusic);
+music.addEventListener('ended', nextMusic);
 music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
 
